@@ -9,7 +9,7 @@ export function Menu() {
           <NavigationMenu.Trigger className="flex flex-row items-center gap-1">
             Services <CaretDown className="CaretDown" size={16} />
           </NavigationMenu.Trigger>
-          <NavigationMenu.Content className="absolute z-50 bg-orangecard rounded-md shadow-md shadow-gray-800 p-4">
+          <NavigationMenu.Content className="absolute z-50 mt-1 bg-orangecard rounded-md shadow-md shadow-gray-800 p-4">
             <ul className="grid grid-rows-2 gap-2">
               <NavigationMenu.Link asChild>
               <li className="flex flex-col">

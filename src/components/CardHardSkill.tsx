@@ -16,20 +16,20 @@ import { ImagePopOver } from './ImagePopover'
 export function CardHardSkill(){
   return(
     <div className="w-full bg-orangecard py-3 px-3 rounded-b-md">
-      <section className="flex flex-col gap-6">
-      <h1 className="font-bold text-2xl">My hard skills</h1>
-      <div className="flex flex-row gap-3 md:gap-1 flex-wrap  md:flex-nowrap justify-center items-center">
-        <ImagePopOver numberYear={8} image={<img src={html}/>}/>
-        <ImagePopOver numberYear={8} image={<img src={css}/>}/>
-        <ImagePopOver numberYear={2} image={<img src={figma}/>}/>
-        <ImagePopOver numberYear={6} image={<img src={js}/>}/>
-        <ImagePopOver numberYear={4} image={<img src={react}/>}/>
-        <ImagePopOver numberYear={4} image={<img src={typescript}/>}/>
-        <ImagePopOver numberYear={4} image={<img src={git}/>}/>
-        <ImagePopOver numberYear={8} image={<img src={mysql}/>}/>
-        <ImagePopOver numberYear={4} image={<img src={nodejs}/>}/>
-        <ImagePopOver numberYear={8} image={<img src={php}/>}/>
-        <ImagePopOver numberYear={8} image={<img src={api}/>}/>
+      <section className="flex flex-1 flex-col items-center gap-3">
+      <h1 className="font-bold text-2xl self-start">My hard skills</h1>
+      <div className="flex flex-1 flex-row gap-5 py-3 md:py-0  md:gap-10 flex-wrap  md:flex-nowrap justify-center">
+        <img src={html}/>
+        <img src={css}/>
+        <img src={figma}/>
+        <img src={js}/>
+        <img src={react}/>
+        <img src={typescript}/>
+        <img src={git}/>
+        <img src={mysql}/>
+        <img src={nodejs}/>
+        <img src={php}/>
+        <img src={api}/>
       </div>
       </section>
     </div>
