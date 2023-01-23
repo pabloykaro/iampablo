@@ -36,13 +36,16 @@ export function Slide() {
 
   return (
     <div className=" flex flex-row justify-evenly items-center flex-1 h-80 bg-black">
-      <button type="button" onClick={() => changeTheSlide("prev")}>
+      <button
+        className="z-40" 
+        type="button" 
+        onClick={() => changeTheSlide("prev")}>
         <ArrowCircleLeft color="#ffffff" size={42} />
       </button>
-      <div className="absolute text-white bg-bgtemplate w-full  md:w-96 bg-black/60 p-2">
+      <div className="absolute text-white bg-bgtemplate w-56  md:w-96  bg-black/60 p-2">
         <article className="flex flex-col gap-2">
-          <h1 className="text-xl font-bold">Hello friends</h1>
-          <p className="text-sm font-regular">
+          <h1 className="md:text-xl text-lg font-bold">Hello friends</h1>
+          <p className="md:text-sm text-xs font-regular">
             I'm Pablo Ykaro, I'm 23 years old, I started very early in the world
             of programming, and I fell in love with web, mobile and back-end
             development
@@ -56,7 +59,10 @@ export function Slide() {
         src={imageForSlide[positionOfSlide].sourceImage}
       />
 
-      <button type="button" onClick={() => changeTheSlide("next")}>
+      <button 
+        className="z-40"
+        type="button" 
+        onClick={() => changeTheSlide("next")}>
         <ArrowCircleRight color="#ffffff" size={42} />
       </button>
     </div>
