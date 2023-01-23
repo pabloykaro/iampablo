@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+ @apply font-sans;
+}
+
+.CaretDown {
+  position: relative;
+  top: 1px;
+  transition: transform 250ms ease;
+}
+[data-state='open'] > .CaretDown {
+  transform: rotate(-180deg);
+}
+
+
+.slide {
+    transition: transform 0.5s ease-in-out;
+}
+.slide:hover {
+    transform: scale(1.1);
+}
