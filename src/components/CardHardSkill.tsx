@@ -10,7 +10,6 @@ import mysql from '../assets/hardskills/mysql.svg'
 import nodejs from '../assets/hardskills/nodejs.svg'
 import php from '../assets/hardskills/php.svg'
 import api from '../assets/hardskills/api.svg'
-import { ImagePopOver } from './ImagePopover'
 
 
 export function CardHardSkill(){
